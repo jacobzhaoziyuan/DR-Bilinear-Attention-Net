@@ -1,9 +1,22 @@
+<div align="center">
+
 # BIRA-NET: BILINEAR ATTENTION NET FOR DIABETIC RETINOPATHY GRADING
 
-# Introduction
+[![ICIP2019](https://img.shields.io/badge/arXiv-1905.06312-blue)](https://arxiv.org/abs/1905.06312)
+[![ICIP2019](https://img.shields.io/badge/Conference-ICIP2019-green)](https://doi.org/10.1109/ICIP.2019.880307)
 
-The proposed BiRA-Net is presented in this Section for DR prediction. The proposed BiRA-Net architecture is shown in Fig. 1, which consists of three key components: (i) ResNet, (ii) Attention Net and (iii) Bilinear Net. First, the processed images are put into the ResNet for feature extraction; then
-the Attention Net is applied to concentrate on the suspected area. For more fine-grained classification in this task, a bilinear strategy is adopted, where two RA-Net are trained simultaneously to improve the performance of classification.
+</div>
+
+Pytorch implementation of our method for ICIP2019 paper: "BIRA-NET: BILINEAR ATTENTION NET FOR DIABETIC RETINOPATHY GRADING". 
+
+## Abstract
+
+Diabetic retinopathy (DR) is a common retinal disease that leads to blindness. For diagnosis purposes, DR image grading aims to provide automatic DR grade classification, which is not addressed in conventional research methods of binary DR image classification. Small objects in the eye images, like lesions and microaneurysms, are essential to DR grading in medical imaging, but they could easily be influenced by other objects. To address these challenges, we propose a new deep learning architecture, called BiRA-Net, which combines the attention model for feature extraction and bilinear model for fine-grained classification. Furthermore, in considering the distance between different grades of different DR categories, we propose a new loss function, called grading loss, which leads to improved training convergence of the proposed approach. Experimental results are provided to demonstrate the superior performance of the proposed approach.
+
+<p align="center">
+<img src="./pic/QQ20190426-212322@2x.png" width="550">
+</p>
+
 
 ### Installation
 
@@ -39,5 +52,21 @@ usage: train.py [-h] [--batch-size 30]
             [--epochs 10] [--lr 0.0002]
             [--no-cuda] [--seed 1] [--save-epoch 5]
             [--weight-decay 1e-8] [--image-size 610]
+```
+
+
+## Citation
+If you find the codebase useful for your research, please cite the paper:
+```
+@INPROCEEDINGS{zhao2019bira,
+  author={Zhao, Ziyuan and Zhang, Kerui and Hao, Xuejie and Tian, Jing and Heng Chua, Matthew Chin and Chen, Li and Xu, Xin},
+  booktitle={2019 IEEE International Conference on Image Processing (ICIP)}, 
+  title={BiRA-Net: Bilinear Attention Net for Diabetic Retinopathy Grading}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={1385-1389},
+  keywords={Diabetes;Feature extraction;Retina;Retinopathy;Training},
+  doi={10.1109/ICIP.2019.8803074}}
 ```
 
