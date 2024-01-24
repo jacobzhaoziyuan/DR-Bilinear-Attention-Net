@@ -3,7 +3,7 @@
 # BIRA-NET: BILINEAR ATTENTION NET FOR DIABETIC RETINOPATHY GRADING
 
 [![ICIP2019](https://img.shields.io/badge/arXiv-1905.06312-blue)](https://arxiv.org/abs/1905.06312)
-[![ICIP2019](https://img.shields.io/badge/Conference-ICIP2019-green)](https://ieeexplore.ieee.org/document/8803074))
+[![ICIP2019](https://img.shields.io/badge/Conference-ICIP2019-green)](https://ieeexplore.ieee.org/document/8803074)
 
 </div>
 
